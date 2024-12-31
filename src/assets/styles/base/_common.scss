@@ -1,0 +1,95 @@
+@use '../abstracts/color' as *;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  min-height: 100vh;
+}
+.z-container {
+  width: 100%;
+  padding: 0px 48px 100px;
+  margin-top: 75px;
+}
+
+.z-content-page {
+  background-color: $system-colour-white;
+  padding: 30px 30px 80px;
+}
+
+.z-title-description {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.z-background-page {
+  background-color: $body-bg;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 32px;
+  color: $dark-blue;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+.reset-hover {
+  &:hover {
+    background-color: transparent !important;
+    color: inherit !important;
+  }
+}
+
+.reset-antd-background {
+  background-color: $system-colour-white !important;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  background-color: $body-bg;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root {
+  isolation: isolate;
+}

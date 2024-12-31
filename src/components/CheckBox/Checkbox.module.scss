@@ -1,0 +1,53 @@
+@use '../../assets/styles/abstracts/color' as *;
+
+.checkboxContent {
+  margin: 50px 0;
+
+  .ant-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+
+    .ant-checkbox-inner {
+      width: 32px;
+      height: 32px;
+      border: 1px solid $z-input-border;
+      border-radius: 8px;
+
+      &::after {
+        width: 13px;
+        height: 18px;
+        border: 4px solid $system-colour-white;
+        border-top: 0;
+        border-inline-start: 0;
+      }
+    }
+
+    .ant-checkbox-checked {
+      .ant-checkbox-inner {
+        background-color: $z-blue;
+      }
+    }
+
+    .label {
+      font-size: 16px;
+      color: $system-colour-dark;
+      margin-left: 15px;
+    }
+
+    &:not(&-disabled):hover {
+      .ant-checkbox-inner {
+        border-color: $z-input-border;
+      }
+    }
+  }
+
+  .errorBlock {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: $system-colour-negative;
+    margin-top: 5px;
+    margin-left: 56px;
+  }
+}

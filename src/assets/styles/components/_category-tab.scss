@@ -1,0 +1,20 @@
+@use '../abstracts/color' as *;
+
+.form-tabs {
+  .group-btn-category {
+    display: flex;
+    align-items: center;
+    margin-bottom: $space50;
+    .btn-add-categories {
+      color: $z-blue !important;
+      background: none !important;
+    }
+    .btn-delete-categories {
+      color: $system-colour-negative !important;
+      background: none !important;
+    }
+  }
+  .buttons-group {
+    padding: 0 20px;
+  }
+}
